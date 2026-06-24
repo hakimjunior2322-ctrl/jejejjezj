@@ -1,13 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+import './globals.css';
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+export const metadata = {
+  title: 'Adult Platform',
+  description: 'Platform de contenu',
+};
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+export default function RootLayout({ children }) {
+  return (
+    <html lang="fr">
+      <body>{children}</body>
+    </html>
+  );
 }
